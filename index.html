@@ -3,170 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE DON | Digital Sovereignty</title>
-    <!-- Cinematic Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200;400;600&display=swap" rel="stylesheet">
+    <title>THE DON | Digital Sovereign</title>
+    <!-- Cinematic Fonts: Cinzel (The Title), Cormorant Garamond (The Text) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- The Custom Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
-
-    <!-- Background Particle Engine -->
-    <canvas id="canvas"></canvas>
-
-    <!-- Noise Overlay for Film Grain -->
-    <div class="noise-overlay"></div>
+    <!-- Dynamic Background Elements -->
+    <div class="spotlight"></div>
+    <div class="noise"></div>
+    <div class="vignette"></div>
 
     <!-- Navigation -->
     <nav>
         <div class="logo">OMERTA</div>
-        <div class="menu-items">
-            <a href="#territory">Territory</a>
-            <a href="#operations">Operations</a>
-            <a href="#wars">Wars Won</a>
-            <a href="#sitdown" class="gold-link"> The Sit Down</a>
+        <div class="nav-links">
+            <a href="#hero">The Don</a>
+            <a href="#rackets">The Business</a>
+            <a href="#ledger">The Ledger (Blog)</a>
+            <a href="#meeting" class="gold-cta">Kiss The Ring</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="territory" class="hero">
-        <div class="hero-text">
-            <h2 class="pre-title">They Chase Algorithms.</h2>
-            <h1 class="glitch" data-text="I DICTATE THEM.">I DICTATE THEM.</h1>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h2 class="sub-head">Digital Marketing Specialist</h2>
+            <h1 class="headline">I'm Gonna Make Google<br><span class="blood-text">An Offer It Can't Refuse.</span></h1>
             <p class="manifesto">
-                I do not "optimize" your marketing. I orchestrate a takeover. <br>
-                SEO, Ads, Strategy. Total Digital Sovereignty.
+                Keep your friends close, but your analytics closer. I don't beg for traffic. I command it.
+                <br>SEO Strategy. Paid Ads. Total Domination.
             </p>
-            <a href="#sitdown" class="btn-primary">Kiss The Ring</a>
+            <div class="btn-group">
+                <a href="#meeting" class="btn-main">Sit Down With Me</a>
+                <a href="#rackets" class="btn-ghost">View The Operations</a>
+            </div>
+        </div>
+        
+        <!-- YOUR PHOTO GOES HERE -->
+        <div class="hero-image-container">
+            <!-- Replace 'my-photo.jpg' with your actual file name -->
+            <img src="my-photo.jpg" alt="The Don" class="don-photo">
+            <div class="photo-overlay"></div>
         </div>
     </section>
 
-    <!-- Services (Operations) -->
-    <section id="operations" class="section">
-        <div class="section-header">
-            <span>MY METHOD</span>
-            <h2>THE OPERATIONS</h2>
+    <!-- OPERATIONS (Services) -->
+    <section id="rackets" class="section">
+        <div class="section-title">
+            <span>Our Thing</span>
+            <h2>The Family Business</h2>
         </div>
-        
-        <div class="grid-display">
-            <div class="op-card">
-                <div class="number">01</div>
-                <h3>The Enforcer (SEO)</h3>
-                <p>We don't ask Google for rankings. We take them. Technical dominance, migration survival, and absolute keyword authority.</p>
+
+        <div class="card-grid">
+            <!-- Card 1 -->
+            <div class="mafia-card" data-tilt>
+                <div class="card-icon">🗡️</div>
+                <h3>The Hit (SEO)</h3>
+                <p>We leave the gun, we take the cannoli, and we take the #1 spot. Technical SEO and Migration that eliminates the competition.</p>
             </div>
-            <div class="op-card">
-                <div class="number">02</div>
-                <h3>The Capo (Paid Ads)</h3>
-                <p>Google & Meta Ads. I turn your budget into a weapon. High ROI is not a goal; it is the minimum requirement for my presence.</p>
+            <!-- Card 2 -->
+            <div class="mafia-card" data-tilt>
+                <div class="card-icon">💰</div>
+                <h3>The Tribute (Paid Ads)</h3>
+                <p>Google & Meta Ads. You pay for results, not promises. I turn your ad spend into a laundering machine for profit.</p>
             </div>
-            <div class="op-card">
-                <div class="number">03</div>
+            <!-- Card 3 -->
+            <div class="mafia-card" data-tilt>
+                <div class="card-icon">♟️</div>
                 <h3>The Consigliere (Strategy)</h3>
-                <p>Data tells the truth. I translate analytics into execution. No fluff. No guessing. Just cold, hard actionable intelligence.</p>
+                <p>Marketing Strategy & Analytics. I look at the numbers and tell you who is loyal and who must be cut loose.</p>
             </div>
-            <div class="op-card">
-                <div class="number">04</div>
-                <h3>The Propaganda (Content)</h3>
-                <p>Content that doesn't just inform—it indoctrinates. YouTube growth and social management that builds a cult, not an audience.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience (Wars Won) -->
-    <section id="wars" class="section dark-mode">
-        <div class="section-header">
-            <span>MY LEGACY</span>
-            <h2>WARS WON</h2>
-        </div>
-
-        <div class="history-list">
-            <div class="history-item">
-                <span class="year">PRESENT</span>
-                <div class="history-details">
-                    <h3>Head of Digital Empire</h3>
-                    <p>Controlling market share for 7-figure syndicates.</p>
-                </div>
-            </div>
-            <div class="history-item">
-                <span class="year">2019</span>
-                <div class="history-details">
-                    <h3>Senior SEO Architect</h3>
-                    <p>Orchestrated the migration of massive data infrastructures.</p>
-                </div>
-            </div>
-            <div class="history-item">
-                <span class="year">2015</span>
-                <div class="history-details">
-                    <h3>Revenue Commander</h3>
-                    <p>Scaled paid traffic operations. Crushed competition.</p>
-                </div>
+            <!-- Card 4 -->
+            <div class="mafia-card" data-tilt>
+                <div class="card-icon">🥃</div>
+                <h3>The Influence (Content)</h3>
+                <p>Social Media & YouTube. We build an aura so strong, the market has no choice but to respect the family.</p>
             </div>
         </div>
     </section>
 
-    <!-- The Blog (The Vault) -->
-    <section id="vault" class="section">
-        <div class="section-header">
-            <span>INTELLIGENCE</span>
-            <h2>THE VAULT</h2>
-        </div>
-        
-        <div class="filter-bar">
-            <button class="filter active" onclick="filter('all')">All Files</button>
-            <button class="filter" onclick="filter('growth')">Growth</button>
-            <button class="filter" onclick="filter('warfare')">Ad Warfare</button>
+    <!-- THE LEDGER (Blog Section) -->
+    <section id="ledger" class="section dark-red-bg">
+        <div class="section-title">
+            <span>Intelligence</span>
+            <h2>The Ledger</h2>
         </div>
 
-        <div class="vault-grid">
-            <article class="vault-file" data-cat="growth">
-                <div class="file-top">CONFIDENTIAL</div>
-                <h3>SEO: The Silent Takeover</h3>
-                <p>How to dominate SERPs without anyone seeing you coming.</p>
-            </article>
-            <article class="vault-file" data-cat="warfare">
-                <div class="file-top">RESTRICTED</div>
-                <h3>Paid Ads: Stop Bleeding</h3>
-                <p>Why your ROAS is weak and how I fix it in 24 hours.</p>
-            </article>
-            <article class="vault-file" data-cat="growth">
-                <div class="file-top">CONFIDENTIAL</div>
-                <h3>The Migration Protocol</h3>
-                <p>Moving domains? Don't lose a single visitor. My playbook.</p>
-            </article>
+        <!-- Filter System -->
+        <div class="filter-menu">
+            <button class="filter-btn active" onclick="filterBlog('all')">All Intel</button>
+            <button class="filter-btn" onclick="filterBlog('seo')">SEO Strategy</button>
+            <button class="filter-btn" onclick="filterBlog('ads')">Paid Warfare</button>
+            <button class="filter-btn" onclick="filterBlog('analytics')">Data/GSC</button>
         </div>
-    </section>
 
-    <!-- Contact (The Sit Down) -->
-    <section id="sitdown" class="footer-section">
-        <div class="footer-content">
-            <h2>The Sit Down</h2>
-            <p>I don't do "chats." I do business.<br>If you are ready to pay the price for power, speak.</p>
+        <div class="blog-grid">
+            <!-- Article 1 -->
+            <article class="blog-post" data-category="seo">
+                <div class="post-cat">SEO STRATEGY</div>
+                <h3>Buried on Page 2?</h3>
+                <p>How to dig your way out and silence the witnesses (competitors).</p>
+                <a href="#">Read The File &rarr;</a>
+            </article>
             
-            <form class="mafia-form" id="contactForm">
-                <div class="input-group">
-                    <input type="text" required placeholder=" ">
-                    <label>Name</label>
-                </div>
-                <div class="input-group">
-                    <input type="email" required placeholder=" ">
-                    <label>Contact</label>
-                </div>
-                <div class="input-group">
-                    <select>
-                        <option>Nature of Business</option>
-                        <option>Total SEO Domination</option>
-                        <option>Paid Ad Rescue</option>
-                        <option>Strategic Counsel</option>
-                    </select>
-                </div>
-                <button type="submit">Send The Tribute</button>
-            </form>
-        </div>
-    </section>
+            <!-- Article 2 -->
+            <article class="blog-post" data-category="ads">
+                <div class="post-cat">PAID ADS</div>
+                <h3>Stop Bleeding Cash</h3>
+                <p>Your ROAS is an insult. Here is how we fix the books.</p>
+                <a href="#">Read The File &rarr;</a>
+            </article>
+            
+            <!-- Article 3 -->
+            <article class="blog-post" data-category="analytics">
+                <div class="post-cat">ANALYTICS</div>
+                <h3>The Numbers Don't Lie</h3>
+                <p>Converting cold GSC data into actionable death sentences for bad keywords.</p>
+                <a href="#">Read The File &rarr;</a>
+            </article>
 
-    <script src="script.js"></script>
-</body>
-</html>
+             <!-- Article 4 -->
+             <article class="blog-post" data-category="seo">
+                <div class="post-cat">MIGRATION</div>
+                <h3>Moving The Body</h3>
+                <p>Website migration without losing your SEO ranking authority.</p>
+                <a href="#">Read The File &rarr;</a>
+            </article>
+        </div>
+    </sect
