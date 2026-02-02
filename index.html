@@ -132,4 +132,73 @@
                 <a href="#">Read The File &rarr;</a>
             </article>
         </div>
-    </sect
+    </section>
+
+    <!-- THE SIT DOWN (Contact Form) -->
+    <section id="meeting" class="section">
+        <div class="contact-wrapper">
+            <div class="contact-text">
+                <h2>Request A Sit Down</h2>
+                <p>I am a busy man. Do not come to me with small problems.<br>Tell me what you need, and I will tell you the price.</p>
+                <p class="quote">"Great men are not born great, they grow great."</p>
+            </div>
+
+            <!-- FORM CONNECTED TO FORM SUBMIT (No Server Needed) -->
+            <!-- IMPORTANT: Replace 'YOUR_EMAIL_HERE' with your actual email address in the action URL below -->
+            <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST" class="luxury-form">
+                
+                <!-- Anti-spam honeypot (hidden) -->
+                <input type="text" name="_honey" style="display:none">
+                <!-- Disable Captcha for cleaner look (optional) -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Success Page (Stays on page basically) -->
+                <input type="hidden" name="_next" value="https://yourwebsite.com/thanks">
+
+                <div class="input-row">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                </div>
+                
+                <div class="input-row">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="input-row">
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                </div>
+
+                <div class="input-row">
+                    <select name="service_needed" required>
+                        <option value="" disabled selected>What do you need?</option>
+                        <option value="SEO Dominance">SEO Dominance</option>
+                        <option value="Paid Ads Management">Paid Ads Management</option>
+                        <option value="Full Marketing Strategy">Full Marketing Strategy (The Works)</option>
+                        <option value="Consulting">Just Advice</option>
+                    </select>
+                </div>
+
+                <div class="input-row">
+                    <textarea name="message" rows="4" placeholder="Write what you are looking for..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">SEND THE MESSAGE</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Est. 2024. Omerta Digital. <span class="gold">Loyalty is everything.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- 3D Tilt Library from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".mafia-card"), {
+            max: 15,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.2,
+        });
+    </script>
+</body>
+</html>
