@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Specialist | Digital Dominance</title>
+    <!-- Importing the "Godfather" Fonts: Playfair Display (Serif) & Lato (Sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">THE SPECIALIST</div>
+        <ul class="nav-links">
+            <li><a href="#services">Operations</a></li>
+            <li><a href="#experience">Legacy</a></li>
+            <li><a href="#blog">Intel</a></li>
+            <li><a href="#contact" class="cta-btn">Make an Appointment</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content fade-in">
+            <h1>You Don't Chase Attention.<br><span>You Command It.</span></h1>
+            <p class="sub-headline">SEO Strategy. Paid Ads. Total Digital Dominance.</p>
+            <a href="#contact" class="gold-btn">Approach The Table</a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2 class="section-title">My Operations</h2>
+        <p class="section-subtitle">Precision. Strategy. Results.</p>
+        
+        <div class="grid-container">
+            <div class="card">
+                <h3>SEO Mastery</h3>
+                <ul>
+                    <li>SEO Analytics & Growth</li>
+                    <li>Technical Strategy</li>
+                    <li>Migration SEO</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Paid Acquisition</h3>
+                <ul>
+                    <li>Google Ads Elite</li>
+                    <li>Meta Ads Strategy</li>
+                    <li>ROI Optimization</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Content & Social</h3>
+                <ul>
+                    <li>YouTube SEO Growth</li>
+                    <li>Social Media Management</li>
+                    <li>High-Value Content Creation</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Data Intelligence</h3>
+                <ul>
+                    <li>Google Analytics / GSC</li>
+                    <li>Data to Action Conversion</li>
+                    <li>Marketing Strategy</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section dark-bg">
+        <h2 class="section-title">The Legacy</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="year">2020 - Present</div>
+                <h3>Head of Digital Strategy</h3>
+                <p>Orchestrating market takeovers for high-ticket clients.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2017 - 2020</div>
+                <h3>Senior SEO Architect</h3>
+                <p>Built infrastructures that traffic flows through instinctively.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2015 - 2017</div>
+                <h3>Performance Marketer</h3>
+                <p>Mastered the art of paid conversion and data warfare.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section with Filter -->
+    <section id="blog" class="section">
+        <h2 class="section-title">The Intel</h2>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterBlog('all')">All Intel</button>
+            <button class="filter-btn" onclick="filterBlog('seo')">SEO</button>
+            <button class="filter-btn" onclick="filterBlog('ads')">Paid Ads</button>
+            <button class="filter-btn" onclick="filterBlog('strategy')">Strategy</button>
+        </div>
+
+        <div class="blog-grid">
+            <!-- Blog Post 1 -->
+            <article class="blog-card" data-category="seo">
+                <div class="category-tag">SEO</div>
+                <h3>The Silence of the SERPs</h3>
+                <p>How to rank without noise. The technical guide to dominance.</p>
+            </article>
+            <!-- Blog Post 2 -->
+            <article class="blog-card" data-category="ads">
+                <div class="category-tag">Ads</div>
+                <h3>Stop Burning Cash</h3>
+                <p>Why your ROAS is weak and how to fix the leak.</p>
+            </article>
+            <!-- Blog Post 3 -->
+            <article class="blog-card" data-category="strategy">
+                <div class="category-tag">Strategy</div>
+                <h3>The 6-Month Siege</h3>
+                <p>A marketing strategy for long-term territory control.</p>
+            </article>
+             <!-- Blog Post 4 -->
+             <article class="blog-card" data-category="seo">
+                <div class="category-tag">SEO</div>
+                <h3>Migration Without Loss</h3>
+                <p>Moving domains without losing your authority.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact / Schedule Meeting -->
+    <section id="contact" class="section">
+        <div class="contact-box">
+            <h2>Schedule The Meeting</h2>
+            <p>I only work with those who are serious. If that is you, proceed.</p>
+            
+            <!-- This form doesn't send email yet, it's the frontend interface -->
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <select>
+                    <option>Topic of Discussion</option>
+                    <option>SEO Overhaul</option>
+                    <option>Paid Ads Management</option>
+                    <option>Full Marketing Strategy</option>
+                </select>
+                <button type="submit" class="gold-btn">Confirm Request</button>
+            </form>
+            
+            <div class="divider">OR</div>
+            
+            <!-- Link this to your Calendly -->
+            <a href="#" class="calendar-link">Open Calendar &raquo;</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 The Specialist. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
